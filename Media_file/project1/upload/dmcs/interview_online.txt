@@ -1,0 +1,5 @@
+for coding questions: hackerrank
+
+
+geeks for geek:
+		https://www.geeksforgeeks.org/top-40-python-interview-questions-answers/

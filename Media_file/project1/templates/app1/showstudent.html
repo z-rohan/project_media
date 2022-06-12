@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title  %}
+    <title>SHOW DATA</title>
+{% endblock %}
+
+{% block content %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">SID</th>
+        <th scope="col">NAME</th>
+        <th scope="col">BRANCH</th>
+        <th scope="col">PIC</th>
+        <th scope="col">DMC</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for i in obj %}
+      <tr>
+        <th scope="row">{{i.sid}}</th>
+        <td>{{i.name}}</td>
+        <td>{{i.branch}}</td>
+        <!--{% if i.photo in %}-->
+        <td><img src="{{i.photo.url}}" alt="image" width="50px" height="100px"></td>
+        <!--{% endif %}-->
+        <td><a href="{{i.dmc.url}}">Click Here</a></td>
+      </tr>
+        {% endfor %}
+     
+    </tbody>
+  </table>
+{% endblock %}
